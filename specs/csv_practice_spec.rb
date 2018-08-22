@@ -176,11 +176,11 @@ describe 'CSV Practice Methods' do
       most_medals = country_with_most_medals(medal_totals)
 
       # Assert
-      expect(most_medals[:country]).must_equal 'United States'
+      expect(most_medals[:country]).must_equal "United States"
     end
   end
 
-  xdescribe 'athlete_height_in_inches' do
+  describe 'athlete_height_in_inches' do
     it 'correctly converts the height to inches' do
       # Arrange
       data = load_data(OLYMPIC_DATA_FILENAME)
